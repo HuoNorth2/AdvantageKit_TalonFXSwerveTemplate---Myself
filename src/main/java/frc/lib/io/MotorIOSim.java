@@ -152,6 +152,8 @@ public class MotorIOSim implements MotorIO {
     positionSetpointRad = 0.0;
   }
 
+  // 在仿真中没有实现 setCurrent() 方法，所以仿真调用相关方法无效果
+
   @Override
   public void setPosition(double positionRad) {
     velocityClosedLoop = false;
